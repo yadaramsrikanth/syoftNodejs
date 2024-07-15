@@ -1,0 +1,56 @@
+
+POST http://localhost:3000/register
+Content-type:application/json
+
+{
+"username":"sreekanth",
+"password":"sreekanth@#@#",
+"email":"sreekanth@gmail.com",
+"role":"admin"
+}
+
+####
+
+POST http://localhost:3000/login
+Content-type:application/json
+
+{
+"email":"sreekanth@gmail.com",
+"password":"sreekanth@#@#"
+}
+
+###
+GET http://localhost:3000/product
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNyZWVrYW50aEBnbWFpbC5jb20iLCJpYXQiOjE3MjEwNTAyMzd9.AC7aK_slcAlveVR34MFhITBgO_pFlwvrWr5zL-qzSNM
+
+
+###
+
+POST http://localhost:3000/products
+Content-type:application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNyZWVrYW50aEBnbWFpbC5jb20iLCJpYXQiOjE3MjEwNTAyMzd9.AC7aK_slcAlveVR34MFhITBgO_pFlwvrWr5zL-qzSNM
+
+
+{
+"title":"THINK STRAIGHT",
+"description":"Change Your thoughts,change your life",
+"count":7
+}
+
+###
+
+PUT http://localhost:3000/product/5
+Content-type:application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNyZWVrYW50aEBnbWFpbC5jb20iLCJpYXQiOjE3MjEwNTAyMzd9.AC7aK_slcAlveVR34MFhITBgO_pFlwvrWr5zL-qzSNM
+
+
+{
+"title":"THINK STRAIGHT",
+"description":"Change Your thoughts,change your life",
+"count":15
+}
+
+###
+DELETE http://localhost:3000/product/15
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNyZWVrYW50aEBnbWFpbC5jb20iLCJpYXQiOjE3MjEwNTAyMzd9.AC7aK_slcAlveVR34MFhITBgO_pFlwvrWr5zL-qzSNM
+
